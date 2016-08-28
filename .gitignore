@@ -1,0 +1,4 @@
+._*
+.*.swp
+node_modules
+src/client/public/
