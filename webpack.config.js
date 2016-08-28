@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const BUILD_DIR = path.resolve(__dirname, 'src/client/public');
+const BUILD_DIR = path.resolve(__dirname, 'public');
 const APP_DIR = path.resolve(__dirname, 'src/client');
 
 const config = {
@@ -22,17 +22,3 @@ const config = {
 };
 
 module.exports = config;
-
-// // Existing Code ....
-// var config = {
-//   // Existing Code ....
-//   module : {
-//     loaders : [
-//       {
-//         test : /\.jsx?/,
-//         include : APP_DIR,
-//         loader : 'babel'
-//       }
-//     ]
-//   }
-// }
