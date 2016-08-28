@@ -2,6 +2,7 @@
 
 ## Installed :
 1. Webpack
+2. Babel (es2015 and React presets)
 
 ## Architecture :
 * src
