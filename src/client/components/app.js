@@ -1,6 +1,8 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import React from 'react';
+import { connect } from 'react-redux';
 
-const App = () => <div>{`placeholder`}</div>
+import { identity as mapStateToProps } from 'ramda'
 
-export default connect()(App)
+const App = ({ placeholder }) => <div>{ placeholder }</div>
+
+export default connect(mapStateToProps)(App);

@@ -3,15 +3,19 @@ import { render } from 'react-dom'
 import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
 
+// import * as reducers from './dux/index'
+// const rootReducer = combineReducers(reducers)
+import { reducer } from './dux/index'
 
 import App from './components/app'
 
-// import * as reducers from './dux/index'
-// const rootReducer = combineReducers(reducers)
-import rootReducer from './dux/index'
-
 //createStore(reducer, [preloadedState], [enhancer])
-const rootStore = createStore(rootReducer);
+const rootStore = createStore(
+  reducer,
+  {
+    placeholder: 'value'
+  }
+);
 
 render(
   <Provider store={rootStore}>
