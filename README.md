@@ -3,6 +3,7 @@
 ## Installed :
 1. Webpack
 2. Babel (es2015 and React presets)
+3. React + redux + ramda
 
 ## Architecture :
 * src >>
@@ -11,7 +12,12 @@
 
   * client >>
 
-    index / entry point
+      index.js // entry point
+
+    * components
+
+        app.js
+
 
 * public >>
 

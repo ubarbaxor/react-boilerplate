@@ -1,10 +1,20 @@
-import React from 'react';
-import {render} from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { combineReducers, createStore } from 'redux'
+import { Provider } from 'react-redux'
 
-class App extends React.Component {
-  render () {
-    return <p> Hello React!</p>;
-  }
-}
 
-render(<App/>, document.getElementById('app'));
+import App from './components/app'
+
+// import * as reducers from './dux/index'
+// const rootReducer = combineReducers(reducers)
+import rootReducer from './dux/index'
+
+//createStore(reducer, [preloadedState], [enhancer])
+const rootStore = createStore(rootReducer);
+
+render(
+  <Provider store={rootStore}>
+    <App/>
+  </Provider>,
+  document.getElementById('app'));
