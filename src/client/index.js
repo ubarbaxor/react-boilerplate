@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 
 // import * as reducers from './dux/index'
 // const rootReducer = combineReducers(reducers)
-import { reducer } from './dux/index'
+import { reducer } from './dux/placeholder'
 
 import App from './components/app'
 
