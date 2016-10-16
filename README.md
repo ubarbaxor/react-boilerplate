@@ -21,8 +21,7 @@
 
 * public >>
 
-  There goes the bundle / served content
+  There goes the bundle / static content
 
 + package.json
 + webpack.config.js
-

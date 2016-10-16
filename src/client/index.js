@@ -6,12 +6,10 @@ import { Provider } from 'react-redux'
 
 import App from './components/app'
 
-// import * as reducers from './dux/index'
-// const rootReducer = combineReducers(reducers)
-import rootReducer from './dux/index'
+import reducer from './dux/main'
 
 //createStore(reducer, [preloadedState], [enhancer])
-const rootStore = createStore(rootReducer);
+const rootStore = createStore(reducer);
 
 render(
   <Provider store={rootStore}>
