@@ -79,7 +79,7 @@ const initAnalytics = () => {
 
   // Load Analytics.js with your key, which will automatically
   // load the tools you've enabled for your account. Boosh!
-  analytics.load("Lv1K9Ar9g1ng9kXpsDkP8wQpPYYTfQB9");
+  analytics.load("YOUR_SECRET_KEY");
 
   // Make the first page call to load the integrations. If
   // you'd like to manually name or tag the page, edit or
