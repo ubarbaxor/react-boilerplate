@@ -3,6 +3,12 @@ import { connect } from 'react-redux';
 
 import { identity as mapStateToProps } from 'ramda'
 
-const App = ({ placeholder }) => <div>{ placeholder }</div>
+import Swapper from './swapper'
+
+const App = ({ placeHolder }) =>
+  <div>
+    { placeHolder }
+    <Swapper></Swapper>
+  </div>
 
 export default connect(mapStateToProps)(App);

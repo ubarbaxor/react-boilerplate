@@ -10,15 +10,10 @@ import { reducer } from './dux/placeholder'
 import App from './components/app'
 
 //createStore(reducer, [preloadedState], [enhancer])
-const rootStore = createStore(
-  reducer,
-  {
-    placeholder: 'value'
-  }
-);
+import { store } from './dux/placeholder'
 
 render(
-  <Provider store={rootStore}>
+  <Provider store={store}>
     <App/>
   </Provider>,
   document.getElementById('app'));
