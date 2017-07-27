@@ -14,7 +14,7 @@ const App = ({ baz, foo }) => (
       label='Baz me up, grand foo' />
     <Video
       src='http://media.istockphoto.com/videos/loopable-program-code-blue-and-white-video-id158328599'
-      autoplay={true}
+      autoplay
     />
   </div>
 )

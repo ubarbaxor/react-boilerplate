@@ -17,8 +17,10 @@ const reducer = (state = DEFAULT, action) => {
       }
     case LOG:
       console.log(action.payload)
+      break
     case LOG_PAYLOAD:
       console.log(action.payload)
+      break
     default:
       return ({
         ...state,
